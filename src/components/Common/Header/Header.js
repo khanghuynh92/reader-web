@@ -131,6 +131,7 @@ export class Header extends Component {
                     </DropdownToggle>
 
                     <DropdownMenu right>
+                      <a href={`${process.env.FETCH_URL}`} className="dropdown-item" target="_blank">Fetch</a>
                       <button
                         name="logout"
                         type="button"
@@ -139,7 +140,6 @@ export class Header extends Component {
                       >
                         Logout
                       </button>
-                      <a href={`${process.env.FETCH_URL}`} className="dropdown-item" target="_blank">Fetch</a>
                     </DropdownMenu>
                   </NavDropdown>
                 )}
