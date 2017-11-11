@@ -84,6 +84,7 @@ export class PostComponent extends Component {
             onClick={this.view}
           >
             {`${this.props.index + 1}. ${this.props.post.title}`}
+            {this.props.post.content && ` - ${this.props.post.content}`}
           </a>
         </div>
 

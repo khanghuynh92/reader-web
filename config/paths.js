@@ -25,6 +25,9 @@ function ensureSlash(path, needsSlash) {
 const getPublicUrl = appPackageJson =>
   envPublicUrl || require(appPackageJson).homepage;
 
+const getFetchUrl = appPackageJson =>
+  envPublicUrl || require(appPackageJson).proxy['/api'].target;
+
 // We use `PUBLIC_URL` environment variable or "homepage" field to infer
 // "public path" at which the app is served.
 // Webpack needs to know it to put the right <script> hrefs into HTML even in
@@ -37,6 +40,7 @@ function getServedPath(appPackageJson) {
     (publicUrl ? url.parse(publicUrl).pathname : '/');
   return ensureSlash(servedUrl, true);
 }
+
 
 // config after eject: we're in ./config/
 module.exports = {
@@ -52,4 +56,5 @@ module.exports = {
   appNodeModules: resolveApp('node_modules'),
   publicUrl: getPublicUrl(resolveApp('package.json')),
   servedPath: getServedPath(resolveApp('package.json')),
+  fetchUrl: 'http://localhost:9001/v1/fetch',
 };

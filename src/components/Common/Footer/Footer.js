@@ -12,7 +12,7 @@ const defaultProps = {
 };
 
 const Footer = ({ className }) => (
-  <footer className={`footer ${className || ''}`}><a href="https://gorillab.co/">Gorillab</a> <span>♥︎</span> You</footer>
+  <footer className={`footer ${className || ''}`}> Bitcoin <span>♥︎</span> <a href="https://www.facebook.com/profile.php?id=100008787426754">You</a> </footer>
 );
 
 Footer.propTypes = propTypes;

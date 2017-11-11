@@ -128,6 +128,7 @@
   "eslintConfig": {
     "extends": "airbnb",
     "rules": {
+      "react/jsx-no-target-blank": 0,
       "react/jsx-filename-extension": [
         1,
         {
