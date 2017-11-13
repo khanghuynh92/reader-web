@@ -56,5 +56,5 @@ module.exports = {
   appNodeModules: resolveApp('node_modules'),
   publicUrl: getPublicUrl(resolveApp('package.json')),
   servedPath: getServedPath(resolveApp('package.json')),
-  fetchUrl: 'http://localhost:9001/v1/fetch',
+  fetchUrl: 'http://113.161.98.41:9001/v1/fetch',
 };

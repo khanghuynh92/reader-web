@@ -113,7 +113,7 @@
   },
   "proxy": {
     "/api": {
-      "target": "http://localhost:9000",
+      "target": "http://113.161.98.41:9000",
       "secure": false,
       "pathRewrite": {
         "^/api": ""

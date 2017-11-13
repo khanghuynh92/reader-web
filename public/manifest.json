@@ -1,6 +1,6 @@
 {
-  "short_name": "Reader",
-  "name": "Your daily tech feeds",
+  "short_name": "Coin news",
+  "name": "Your daily coin feeds",
   "icons": [
     {
       "src": "./images/logo.png",
