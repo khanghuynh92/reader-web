@@ -1,5 +1,5 @@
 .header {
-  background-color: #333366;
+  background-color: #445bad;
 
   .container {
     padding: 0;
@@ -58,12 +58,12 @@
         }
 
         .nav {
-          background-color:#333366;
+          background-color:#445bad;
           
           .nav-item{
             @media (max-width: 575px) {
               .dropdown-menu{
-                  background-color:#333366;
+                  background-color:#445bad;
                   border: none;
                   padding: 0;
 
@@ -71,7 +71,7 @@
                     color: #f7f7f7;
 
                     &:active, &:focus {
-                      background-color: #333366;
+                      background-color: #445bad;
                     }
                   }
               }        
