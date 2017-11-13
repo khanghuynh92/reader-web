@@ -143,7 +143,8 @@
         {
           "props": false
         }
-      ]
+      ],
+      "linebreak-style": 0
     },
     "env": {
       "browser": true,
